@@ -14,10 +14,15 @@ public class CalculatorModel {
     // Maintains the value of the sum of the numbers entered in the view.
 	
     private int calculationValue;
+    private int productValue;
 	
     public void addTwoNumbers(int firstNumber, int secondNumber) {
 		
 	calculationValue = firstNumber + secondNumber;
+    }
+    
+    public void multTwoNumbers(int firstNumberMult, int secondNumberMult){
+        calculationValue = firstNumberMult * secondNumberMult;
     }
 	
     public int getCalculationValue() {
